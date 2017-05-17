@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Game</title>
+    <meta charset="utf-8" />
+    
+	<link rel="stylesheet" type="text/css" href="suomiTiles.css">
+	
+</head>
+<body onload="drawTiles();">
+
+    <div class="tooltip">
+        Instruction
+        <span class="tooltiptext">When you click one tile, this tile and its neighbours will toggle. when all tiles are "Suomi Finland 100", you win! Alright, now click any tile to start the game! Have fun!</span>
+    </div>
+	<button onclick="drawTiles();startGame();">restart</button>
+    {Time: <span id="timer">0</span>}
+    {Score: <span id="score">0</span>}
+    <br><br>
+
+	<div id="board"></div>
+   
+    <br>
+    <button id="submit_score">Submit score</button>
+    <button id="save">Save</button>
+    <button id="load">Load</button>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="suomiTiles.js"></script>
+</body>
+</html>
